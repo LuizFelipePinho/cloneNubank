@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #81259d;
+    font-family: 'Baloo 2', cursive;
+}
+
+.container{
+    width: 24em;
+    height: 33em;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    align-items: center;
+    padding: 1em;
+    border-radius: 0.6em;
+    background-color: #ffffff;
+
+}
+
+.titulo {
+    margin: 1em;
+    font-size: 1.5em;
+}
+
+
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+    width: 16em;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    border-bottom: dashed 0.01em rgba(216, 216, 216, 0.897);
+
+    outline: 0;
+} 
+
+
+.infoUnica {
+    margin-top: 1.5em;
+    margin-bottom: 1.9em;
+
+}
+
+.infoDigitada {
+    border: 0 none;
+    border-bottom: dashed 0.01em rgba(216, 216, 216, 0.897);
+
+}
+
+
+
+.botaoContinuar{
+    padding: 1.2em;
+    margin-top: 3em;
+    background-color: #ffffff;
+    border: solid 0.1em #81259d;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 550;
+    color: #81259d;
+
+}
+
+
+.infoAdicionais{
+    font-size: 0.9em;
+    margin-top: 1.4em;
+
+    justify-content: center;
+
+}
+
+.infoAdicionais p {
+    margin: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #81259d;
+    font-weight: 300;
+
+
+
+}
