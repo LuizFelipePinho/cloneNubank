@@ -69,6 +69,7 @@ textarea:focus, input:focus, select:focus {
     font-size: 0.8em;
     font-weight: 550;
     color: #81259d;
+    cursor: pointer;
 
 }
 

@@ -1,4 +1,5 @@
-let bdUser = []
+
+export let bdUser = []
 
 const botaoCriar = document.querySelector('.botaoContinuar')
 

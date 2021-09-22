@@ -1,10 +1,7 @@
+
 // simula nosso banco de dados
-const dbUsuarios = [
-    {
-        cpf: "123",
-        senha: 'abc'
-    }
-]
+import  { bdUser } from './scripCadastro.js'
+
 
 // pega o botao de continuar
 const botaoContinuar = document.querySelector('.botaoContinuar')
@@ -21,19 +18,19 @@ botaoContinuar.addEventListener('click', () => {
     const valorSenha = pegaSenha.value
 
 
-    // monta o modelo que é exatamente ao do banco
-    const montaUsuario = (cpf, senha) => {
-        const usuario = {
-            cpf: cpf,
-            senha: senha
-        }
-        return usuario
-    }
+    // // monta o modelo que é exatamente ao do banco
+    // const montaUsuario = (cpf, senha) => {
+    //     const usuario = {
+    //         cpf: cpf,
+    //         senha: senha
+    //     }
+    //     bdUser.push(usuario)
+    // }
 
-    console.log(montaUsuario(valorCpf, valorSenha))
+    
 
     // procura dentro do pseudo banco se ele existe e retorna dentro de uma lista true ou false
-    const temBD = dbUsuarios.map( (elemento) => {
+    const temBD = bdUser.map( (elemento) => {
         if(elemento.cpf == valorCpf && elemento.senha == valorSenha){
             return true
         } else {
@@ -41,11 +38,14 @@ botaoContinuar.addEventListener('click', () => {
         }
     })
 
+    console.log(temBD)
+
     // mostra se existe o usuario ou nao
     if(temBD[0] == true) {
         alert('sucesso')
     } else{
         alert('cpf ou senha invalidos')
     }
-})
 
+
+})
