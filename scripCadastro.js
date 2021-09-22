@@ -3,7 +3,8 @@ export let bdUser = []
 
 const botaoCriar = document.querySelector('.botaoContinuar')
 
-botaoCriar.addEventListener("click", () => {
+botaoCriar.addEventListener("click", (evento) => {
+    evento.preventDefault()
     const campoCpf = document.querySelector('#cpf');
     const cpfCadastrado = campoCpf.value;
 

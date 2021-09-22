@@ -7,7 +7,8 @@ import  { bdUser } from './scripCadastro.js'
 const botaoContinuar = document.querySelector('.botaoContinuar')
 
 // adiciona um evento de clique, que chama uma função  
-botaoContinuar.addEventListener('click', () => {
+botaoContinuar.addEventListener('click', (evento) => {
+    evento.preventDefault()
     
     //seleciona o campo de input e pega o valor que foi digitado nele
     const pegaCpf = document.querySelector('#cpf');
