@@ -32,7 +32,7 @@ botaoContinuar.addEventListener('click', () => {
 
     console.log(montaUsuario(valorCpf, valorSenha))
 
-    // procura dentro do pseudo banco se ele existe
+    // procura dentro do pseudo banco se ele existe e retorna dentro de uma lista true ou false
     const temBD = dbUsuarios.map( (elemento) => {
         if(elemento.cpf == valorCpf && elemento.senha == valorSenha){
             return true
